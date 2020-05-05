@@ -1,0 +1,320 @@
+/*
+ * 给index内容添加注释
+ */
+body{
+	/*设置body的背景图片，水平方向重复*/
+	background:url(../img/bd-bg.png) repeat-x;
+	/*height: 3000px;*/
+}
+
+/*固定元素的宽度和居中,那个元素需要得到这样的宽度就给哪个元素添加这个类*/
+.w{
+	width:940px;
+	margin:0 auto;
+}
+
+/*
+ * 解决高度塌陷问题
+ */
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.header{
+	/*background-color: #bfa;*/
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;	
+}
+
+.nav{
+	float: right; /*向右浮动*/
+	margin-top: 22px;
+	
+}
+
+.nav li{
+	float: left;
+	/*设定左右边距*/
+	padding: 0px 11px 8px;
+	/*设定左边框*/
+	border-left: 1px dotted #d6d6d6;
+}
+
+/*设置导航条中的超链接*/
+.nav a{
+	color: #666;
+	font:bold 14px Georgia;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #9b9999;
+	text-decoration: underline;
+}
+/*设置导航条中的小标题的格式*/
+p{
+	font:11px Tahoma;
+	color:#b7b7b7;
+}
+
+.banner{
+	background: url(../img/banner/banner-bg.png) no-repeat bottom center;
+	height: 356px;
+	/*开启相对定位*/
+	position: relative;
+}
+
+.pointerDiv{
+	/*开启绝对定位，一般绝对定位的元素是相对于父元素的位置，所以选择将父元素定义为相对定位比较好
+	 如果父元素没有设定，则就相对于窗口大小而言*/
+	position: absolute;
+	top: 314px;
+	left: 20px;
+}
+.pointerDiv a{
+	width:17px;
+	height:17px;
+	background-color: red;
+	float: left;
+	margin-left: 5px;
+	
+	background: url(../img/pointer.png) no-repeat;
+}
+
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background:url(../img/pointer-active.png) no-repeat;
+}
+
+/*内容区域*/
+
+.content{
+	/*background-color: red;*/
+}
+
+.content h1{
+	/*设置文字居中*/
+	text-align: center;
+	/*设定字体，注意顺序*/
+	font:bold 24px Georgia;
+	color: #000000;
+	padding-top: 6px;
+	padding-bottom: 20px;
+	background: url(../img/line.png) no-repeat bottom;
+	margin-bottom: 38px;
+}
+
+.content .pl ,.content .cs ,.content .uc ,
+.contact .sc ,.contact .co ,.contact .nu{
+	width:300px;
+	/*background-color: yellow;*/
+	/*浮动，保证三个div横着放置*/
+	float: left;
+}
+.content .cs,
+.contact .co{
+	/*给div增加左右边距*/
+	margin: 0px 20px;
+}
+
+.content h2{
+	font:21px Georgia;
+	color: #11719e;
+}
+
+.content .p1{
+	font:12px [Helvetica];
+	color: #8c8c8c;
+}
+
+.imgDiv{
+	width:299px;
+	height: 192px;
+	background: url(../img/img-bg.png) no-repeat;
+	margin: 15px 0px 11px 0px;
+	text-align: center;
+	padding-top: 11px;
+}
+
+.content .p2{
+	height: 92px;
+	font:13px Helvetica;
+	color:#3e3e3e;
+	word-spacing: 10px;
+}
+
+.content .lm{
+	text-decoration: none;
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	padding-left: 13px;
+	font:12px/40px Helvetica;
+	color:#016999;
+	margin-bottom: 35px;
+}
+
+
+/*
+ * contact区域
+ */
+.contact{
+	/*background:#bfa;*/
+}
+
+.contact .sc ,.contact .co ,.contact.nu{
+	/*background-color: yellow;*/
+	/*height: 500px;*/
+}
+
+.contact .txt{
+	width:276px;
+	height: 33px;
+	/*设置背景图片*/
+	background: url(../img/txt.png) no-repeat;
+	/*去除默认边框*/
+	border: none;
+	margin: 0px 0px 16px;
+	padding: 0px 10px;
+}
+
+.contact .tarea{
+	/*背景图片的大小*/
+	width:276px; 
+	height: 114px;
+	/*去除默认边框*/
+	border: none;
+	/*设置背景图片*/
+	background: url(../img/tar.png) no-repeat;
+	/*设置文本域不能调整大小*/
+	resize: none;
+	/*去除滚动条*/
+	overflow: auto;
+	/*margin是边框到其他元素的距离*/
+	margin: 0px;
+	/*这里的padding指的是文本到边框的距离*/
+	padding: 10px 10px;
+}
+
+.contact .btn{
+	width:163px;
+	height: 32px;
+	background: url(../img/btn2.png);
+	border:none;
+	margin: 11px 0px 23px;
+	padding: 0px;
+	color:white;
+	font:13px georgia;
+	text-align: left;
+	/*设置文本缩进*/
+	text-indent: 1em;
+	/*设置鼠标指针的样式*/
+	cursor: pointer;
+}
+
+.contact h2{
+	font:18px/1 Georgia;
+	color: #444444;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 15px;
+	padding: 40px 0px 10px;
+}
+
+/*设置联系栏左侧*/
+.sc p
+.nu1 .p1{
+	color: #444;
+	font:12px helvetica;
+}
+
+.plug{
+	/*设置字体大小为0，去除空格*/
+	font-size: 0;
+	margin-top: 0px;
+}
+
+.sc .plug a{
+	margin-right: 2px;
+	
+}
+
+.contact .nl{
+	font:18px/1 bold "Gill Sans MT";
+	color:#828282;
+	padding: 23px 0px 10px;
+}
+
+.sc .txt{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+/*右边的一栏*/
+.nu .lids{
+	margin-bottom: 5px;
+}
+
+.nu .btn{
+	margin-left: -1em;
+}
+
+.img-nu{
+	width:58px;
+	height: 58px;
+	background: url(../img/img4-bg.png) no-repeat;
+	padding-top: 5px;
+	padding-left: 5px;
+	float: left;
+}
+
+.nu .nu1{
+	height: 62px;
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom: 9px;
+	padding-top:8px;
+}
+
+.nu p{
+	font:12px Helvetica;
+	color: #767676;
+}
+
+.footer{
+	background-color: #333;
+	height: 183px;
+	border-top: 10px solid #4c4c4c;
+	
+}
+
+.footer a ,.footer p{
+	font:11px helvetica;
+	color: #999;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: yellow;
+	text-decoration: underline;
+}
+
+.footer .copy{
+	float: right;
+	padding-right: 20px;
+}
+
+.footer .w{
+	width: 932px;
+	padding-top: 18px;
+	padding-left: 8px;
+}
+
+.footer p{
+	padding-bottom: 6px;
+}

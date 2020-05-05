@@ -1,0 +1,300 @@
+/*
+ * 给index内容添加注释
+ */
+body{
+	/*设置body的背景图片，水平方向重复*/
+	background:url(../img/bd-bg.png) repeat-x;
+	height: 3000px;
+}
+
+/*固定元素的宽度和居中,那个元素需要得到这样的宽度就给哪个元素添加这个类*/
+.w{
+	width:940px;
+	margin:0 auto;
+}
+
+/*
+ * 解决高度塌陷问题
+ */
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.header{
+	/*background-color: #bfa;*/
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;	
+}
+
+.nav{
+	float: right; /*向右浮动*/
+	margin-top: 22px;
+	
+}
+
+.nav li{
+	float: left;
+	/*设定左右边距*/
+	padding: 0px 11px 8px;
+	/*设定左边框*/
+	border-left: 1px dotted #d6d6d6;
+}
+
+/*设置导航条中的超链接*/
+.nav a{
+	color: #666;
+	font:bold 14px Georgia;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #9b9999;
+	text-decoration: underline;
+}
+/*设置导航条中的小标题的格式*/
+p{
+	font:11px Tahoma;
+	color:#b7b7b7;
+}
+
+.banner{
+	background: url(../img/banner/banner-bg.png) no-repeat bottom center;
+	height: 356px;
+	/*开启相对定位*/
+	position: relative;
+}
+
+.pointerDiv{
+	/*开启绝对定位，一般绝对定位的元素是相对于父元素的位置，所以选择将父元素定义为相对定位比较好
+	 如果父元素没有设定，则就相对于窗口大小而言*/
+	position: absolute;
+	top: 314px;
+	left: 20px;
+}
+.pointerDiv a{
+	width:17px;
+	height:17px;
+	background-color: red;
+	float: left;
+	margin-left: 5px;
+	
+	background: url(../img/pointer.png) no-repeat;
+}
+
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background:url(../img/pointer-active.png) no-repeat;
+}
+
+/*内容区域*/
+
+.content{
+	/*background-color: red;*/
+}
+
+.content h1{
+	/*设置文字居中*/
+	text-align: center;
+	/*设定字体，注意顺序*/
+	font:bold 24px Georgia;
+	color: #000000;
+	padding-top: 6px;
+	padding-bottom: 20px;
+	background: url(../img/line.png) no-repeat bottom;
+	margin-bottom: 38px;
+}
+
+.pl,.cs,.uc,.sc,.co,.nu{
+	width:300px;
+	/*background-color: yellow;*/
+	/*浮动，保证三个div横着放置*/
+	float: left;
+}
+.content .cs,
+.contact .co{
+	/*给div增加左右边距*/
+	margin: 0px 20px;
+}
+
+.content h2{
+	font:21px Georgia;
+	color: #11719e;
+}
+
+.content .p1{
+	font:12px [Helvetica];
+	color: #8c8c8c;
+}
+
+.imgDiv{
+	width:299px;
+	height: 192px;
+	background: url(../img/img-bg.png) no-repeat;
+	margin: 15px 0px 11px 0px;
+	text-align: center;
+	padding-top: 11px;
+}
+
+.content .p2{
+	height: 92px;
+	font:13px Helvetica;
+	color:#3e3e3e;
+	word-spacing: 10px;
+}
+
+.content .lm{
+	text-decoration: none;
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	padding-left: 13px;
+	font:12px/40px Helvetica;
+	color:#016999;
+	margin-bottom: 35px;
+}
+
+
+/*联系栏区域*/
+
+.contact{
+	margin-top: 40px;
+}
+.contact .sc,.contact .co,.contact .nu{
+	height: 500px;
+	float: left;
+	background: yellow;
+}
+
+/*s设置联系栏的表单项*/
+.contact .txt{
+	width:296px;
+	height: 33px;
+	/*设置背景图片*/
+	background: url(../img/txt.png) no-repeat;
+	/*去除默认边框*/
+	border: none;
+}
+
+.contact .tarea{
+	/*背景图片的大小*/
+	width:296px; 
+	height: 134px;
+	/*去除默认边框*/
+	border: none;
+	/*设置背景图片*/
+	background: url(../img/tar.png) no-repeat;
+	/*设置文本域不能调整大小*/
+	resize: none;
+	/*去除滚动条*/
+	overflow: auto;
+}
+.contact .btn{
+	width:163px;
+	height: 32px;
+	background: url(../img/btn2.png);
+	border:none;
+}
+.co{
+	margin: 0px 20px;
+}
+.contact h2{
+	font:18px Georgia;
+	color: #444444;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 15px;
+	/*padding: 0px 0px 10px;*/
+}
+
+/*.contact p{
+	font:12px Helvetica;
+	color:#444;
+	margin-bottom: 10px;
+}
+
+.contact .plug{
+	width: 50px;
+	height: 50px;
+	display: inline;
+}
+
+#plug1{
+	float: left;
+}
+
+#plug2,#plug3,#plug4,#plug5{
+	float: left;
+}
+
+.contact h3{
+	font:18px bold "Gill Sans MT";
+	color:#828282;
+	padding-bottom: 10px;
+	这里的行间距不管用*/
+	/*padding-top: 40px;  
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 15px 0px 40px 0px;*/
+}*/
+
+/*#mail{
+	height: 33px;
+	width: 290px;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-bottom: 12px;
+}*/
+
+/*.contact .btn{
+	border: none;
+	text-decoration: none;
+	display: block;
+	width:163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	padding-left: 13px;
+	font:13px/32px Helvetica;
+	color:#fff;
+	margin-bottom: 24px;
+	margin-left: 5px;
+}*/
+
+/*.c{
+	background-color: red;
+}
+
+.contact .txt{
+	font:10px Verdana;
+	color: #d4d4d4d;
+	margin: 0px;
+	padding: 0px;
+	width:296px;
+	height: 33px;
+	background: url(../img/txt.png) no-repeat;
+	border: none;
+}
+
+.c .tarea{
+	font:10px Verdana;
+	color: #d4d4d4d;
+	margin: 0px;
+	padding: 0px;
+	width:296px;
+	height: 134px;
+	border:none;
+	background: url(../img/tar.png) no-repeat;
+	resize: none;
+	overflow: auto;
+}
+
+.contact .btn{
+	width: 162px;
+	height: 32px;
+	background: url(../img/btn2.png)) no-repeat;
+	border: none;
+}*/
